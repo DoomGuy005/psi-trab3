@@ -83,6 +83,9 @@
     <Compile Include="DAL\DALPublishers.cs" />
     <Compile Include="DAL\DALPub_info.cs" />
     <Compile Include="DAL\DALTitle.cs" />
+    <Compile Include="HandlePub_Info.ashx.cs">
+      <DependentUpon>HandlePub_Info.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Modelo\Authors.cs" />
     <Compile Include="Modelo\Publishers.cs" />
     <Compile Include="Modelo\Pub_info.cs" />
@@ -146,6 +149,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HandlePub_Info.ashx" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

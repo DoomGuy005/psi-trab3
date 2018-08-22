@@ -12,7 +12,7 @@ namespace WebAppCRUDPUBS.DAL
         {
             string connectionString = "";
             public DALPublishers() {
-                string connectionString = ConfigurationManager.ConnectionStrings["PubsConnectionString"].ConnectionString;
+                this.connectionString = ConfigurationManager.ConnectionStrings["PubsConnectionString"].ConnectionString;
             }
             [DataObjectMethod(DataObjectMethodType.Select)]
             public List<Modelo.Publishers> SelectAll()

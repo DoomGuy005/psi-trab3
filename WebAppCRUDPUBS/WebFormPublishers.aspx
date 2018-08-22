@@ -20,6 +20,11 @@
                     <asp:BoundField DataField="city" HeaderText="Cidade" SortExpression="city" />
                     <asp:BoundField DataField="state" HeaderText="Estado" SortExpression="state" />
                     <asp:BoundField DataField="country" HeaderText="País" SortExpression="country" />
+                    <asp:TemplateField HeaderText="Imagem">
+                        <ItemTemplate>
+                            <asp:Image ID="Image1" runat="server" ImageUrl='<%# "HandlerPub_info.ashx?id=" + Eval("pub_id") %>' />
+                        </ItemTemplate>
+                    </asp:TemplateField>
                 </Columns>
                 <EditRowStyle BackColor="#2461BF" />
                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
