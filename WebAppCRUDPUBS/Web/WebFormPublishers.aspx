@@ -11,6 +11,8 @@
     <form id="form1" runat="server">
         <div>
             <asp:Label ID="Label1" runat="server" Text="Cadastro de Editoras" Font-Names="Calibri"></asp:Label>
+            <br/>
+            <asp:HyperLink ID="HyperLink1" runat="server" Font-Names="Calibri" NavigateUrl="~/Web/WebFormPublishersNew.aspx">Inserir Nova Editoras</asp:HyperLink>
             <hr />
             <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataSourceID="ObjectDataSource1" Font-Names="Calibri" ForeColor="#333333" GridLines="None" PageSize="5">
                 <AlternatingRowStyle BackColor="White" />
@@ -22,7 +24,7 @@
                     <asp:BoundField DataField="country" HeaderText="País" SortExpression="country" />
                     <asp:TemplateField HeaderText="Imagem">
                         <ItemTemplate>
-                            <asp:Image ID="Image1" runat="server" ImageUrl='<%# "HandlerPub_info.ashx?id=" + Eval("pub_id") %>' />
+                            <asp:Image ID="Image1" runat="server" ImageUrl='<%# "HandlePub_info.ashx?id=" + Eval("pub_id") %>' />
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>

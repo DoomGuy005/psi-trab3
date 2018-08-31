@@ -69,21 +69,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
-    <Content Include="WebFormAuthors.aspx" />
-    <Content Include="WebFormAuthorsEdit.aspx" />
-    <Content Include="WebFormAuthorsNew.aspx" />
-    <Content Include="WebFormMenu.aspx" />
-    <Content Include="WebFormPublishers.aspx" />
-    <Content Include="WebFormTitle.aspx" />
-    <Content Include="WebFormTitleEdit.aspx" />
-    <Content Include="WebFormTitleNew.aspx" />
+    <Content Include="Web\WebFormAuthors.aspx" />
+    <Content Include="Web\WebFormAuthorsEdit.aspx" />
+    <Content Include="Web\WebFormAuthorsNew.aspx" />
+    <Content Include="Web\WebFormMenu.aspx" />
+    <Content Include="Web\WebFormPublishers.aspx" />
+    <Content Include="Web\WebFormPublishersNew.aspx" />
+    <Content Include="Web\WebFormPublishersQuery.aspx" />
+    <Content Include="Web\WebFormTitle.aspx" />
+    <Content Include="Web\WebFormTitleEdit.aspx" />
+    <Content Include="Web\WebFormTitleNew.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\DALAuthors.cs" />
     <Compile Include="DAL\DALPublishers.cs" />
     <Compile Include="DAL\DALPub_info.cs" />
     <Compile Include="DAL\DALTitle.cs" />
-    <Compile Include="HandlePub_Info.ashx.cs">
+    <Compile Include="Web\HandlePub_Info.ashx.cs">
       <DependentUpon>HandlePub_Info.ashx</DependentUpon>
     </Compile>
     <Compile Include="Modelo\Authors.cs" />
@@ -91,65 +93,79 @@
     <Compile Include="Modelo\Pub_info.cs" />
     <Compile Include="Modelo\Title.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebFormAuthors.aspx.cs">
+    <Compile Include="Web\WebFormAuthors.aspx.cs">
       <DependentUpon>WebFormAuthors.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebFormAuthors.aspx.designer.cs">
+    <Compile Include="Web\WebFormAuthors.aspx.designer.cs">
       <DependentUpon>WebFormAuthors.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebFormAuthorsEdit.aspx.cs">
+    <Compile Include="Web\WebFormAuthorsEdit.aspx.cs">
       <DependentUpon>WebFormAuthorsEdit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebFormAuthorsEdit.aspx.designer.cs">
+    <Compile Include="Web\WebFormAuthorsEdit.aspx.designer.cs">
       <DependentUpon>WebFormAuthorsEdit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebFormAuthorsNew.aspx.cs">
+    <Compile Include="Web\WebFormAuthorsNew.aspx.cs">
       <DependentUpon>WebFormAuthorsNew.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebFormAuthorsNew.aspx.designer.cs">
+    <Compile Include="Web\WebFormAuthorsNew.aspx.designer.cs">
       <DependentUpon>WebFormAuthorsNew.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebFormMenu.aspx.cs">
+    <Compile Include="Web\WebFormMenu.aspx.cs">
       <DependentUpon>WebFormMenu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebFormMenu.aspx.designer.cs">
+    <Compile Include="Web\WebFormMenu.aspx.designer.cs">
       <DependentUpon>WebFormMenu.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebFormPublishers.aspx.cs">
+    <Compile Include="Web\WebFormPublishers.aspx.cs">
       <DependentUpon>WebFormPublishers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebFormPublishers.aspx.designer.cs">
+    <Compile Include="Web\WebFormPublishers.aspx.designer.cs">
       <DependentUpon>WebFormPublishers.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebFormTitle.aspx.cs">
+    <Compile Include="Web\WebFormPublishersNew.aspx.cs">
+      <DependentUpon>WebFormPublishersNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\WebFormPublishersNew.aspx.designer.cs">
+      <DependentUpon>WebFormPublishersNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\WebFormPublishersQuery.aspx.cs">
+      <DependentUpon>WebFormPublishersQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\WebFormPublishersQuery.aspx.designer.cs">
+      <DependentUpon>WebFormPublishersQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\WebFormTitle.aspx.cs">
       <DependentUpon>WebFormTitle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebFormTitle.aspx.designer.cs">
+    <Compile Include="Web\WebFormTitle.aspx.designer.cs">
       <DependentUpon>WebFormTitle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebFormTitleEdit.aspx.cs">
+    <Compile Include="Web\WebFormTitleEdit.aspx.cs">
       <DependentUpon>WebFormTitleEdit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebFormTitleEdit.aspx.designer.cs">
+    <Compile Include="Web\WebFormTitleEdit.aspx.designer.cs">
       <DependentUpon>WebFormTitleEdit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebFormTitleNew.aspx.cs">
+    <Compile Include="Web\WebFormTitleNew.aspx.cs">
       <DependentUpon>WebFormTitleNew.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebFormTitleNew.aspx.designer.cs">
+    <Compile Include="Web\WebFormTitleNew.aspx.designer.cs">
       <DependentUpon>WebFormTitleNew.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="HandlePub_Info.ashx" />
+    <Content Include="Web\HandlePub_Info.ashx" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -157,6 +173,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagens\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

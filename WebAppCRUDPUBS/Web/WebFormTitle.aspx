@@ -12,7 +12,7 @@
         <div>
             <asp:Label ID="Label1" runat="server" Text="Cadastro de Livros" Font-Names="Verdana"></asp:Label>
             <br />
-            <asp:HyperLink ID="HyperLink1" runat="server" Font-Names="Calibri" NavigateUrl="~/WebFormTitleNew.aspx">Inserir Novo Livro</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" runat="server" Font-Names="Calibri" NavigateUrl="~/Web/WebFormTitleNew.aspx">Inserir Novo Livro</asp:HyperLink>
             <hr />
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="ObjectDataSource1" AllowPaging="True" PageSize="5" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" Font-Names="Verdana" GridLines="Horizontal" OnRowCommand="GridView1_RowCommand">
                 <AlternatingRowStyle BackColor="#F7F7F7" />

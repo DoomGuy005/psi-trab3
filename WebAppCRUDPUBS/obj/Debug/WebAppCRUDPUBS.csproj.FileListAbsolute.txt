@@ -167,8 +167,8 @@ C:\Users\20161011110005\Desktop\psi-trab3\WebAppCRUDPUBS\bin\roslyn\VBCSCompiler
 C:\Users\20161011110005\Desktop\psi-trab3\WebAppCRUDPUBS\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\20161011110005\Desktop\psi-trab3\WebAppCRUDPUBS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\20161011110005\Desktop\psi-trab3\WebAppCRUDPUBS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\20161011110005\Desktop\psi-trab3\WebAppCRUDPUBS\obj\Debug\WebAppCRUDPUBS.csprojAssemblyReference.cache
 C:\Users\20161011110005\Desktop\psi-trab3\WebAppCRUDPUBS\obj\Debug\WebAppCRUDPUBS.csproj.CoreCompileInputs.cache
 C:\Users\20161011110005\Desktop\psi-trab3\WebAppCRUDPUBS\obj\Debug\WebAppCRUDPUBS.csproj.CopyComplete
 C:\Users\20161011110005\Desktop\psi-trab3\WebAppCRUDPUBS\obj\Debug\WebAppCRUDPUBS.dll
 C:\Users\20161011110005\Desktop\psi-trab3\WebAppCRUDPUBS\obj\Debug\WebAppCRUDPUBS.pdb
+C:\Users\20161011110005\Desktop\psi-trab3\WebAppCRUDPUBS\obj\Debug\WebAppCRUDPUBS.csprojAssemblyReference.cache

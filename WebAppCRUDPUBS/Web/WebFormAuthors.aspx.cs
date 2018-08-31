@@ -31,8 +31,13 @@ namespace WebAppCRUDPUBS
                 Session["au_id"] = codigo;
 
                 // Chama a tela de edição
-                Response.Redirect("~\\WebFormAuthorsEdit.aspx");
+                Response.Redirect("~\\Web\\WebFormAuthorsEdit.aspx");
             }
+
+        }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -12,7 +12,7 @@
         <div>
             <asp:Label ID="Label1" runat="server" Text="Cadastro de Autores" Font-Names="Verdana"></asp:Label>
             <hr/>
-            <asp:GridView ID="GridView1" runat="server" CellPadding="4" Font-Names="Calibri" ForeColor="#333333" GridLines="None" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="ObjectDataSource1" PageSize="5" OnRowCommand="GridView1_RowCommand">
+            <asp:GridView ID="GridView1" runat="server" CellPadding="4" Font-Names="Calibri" ForeColor="#333333" GridLines="None" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="ObjectDataSource1" PageSize="5" OnRowCommand="GridView1_RowCommand" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <Columns>
                     <asp:BoundField DataField="au_id" HeaderText="ID" SortExpression="au_id" />

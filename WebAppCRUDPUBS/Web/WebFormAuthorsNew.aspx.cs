@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebAppCRUDPUBS
 {
-    public partial class WebFormTitleNew : System.Web.UI.Page
+    public partial class WebFormAuthorsNew : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -16,21 +16,21 @@ namespace WebAppCRUDPUBS
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Modelo.Title aTitles;
-            DAL.DALTitle aDALTitles;
+            Modelo.Authors aAuthors;
+            DAL.DALAuthors aDALAuthors;
 
             // Instancia um Objeto de Livro com as informações fornecidas
-            aTitles = new Modelo.Title(
-                TextBoxTitleID.Text, TextBoxTitle.Text, TextBoxPubID.Text);
+            aAuthors = new Modelo.Authors(
+                TextBoxAuID.Text, TextBoxLName.Text, TextBoxFName.Text, TextBoxPhone.Text, TextBoxAddress.Text, TextBoxCity.Text, TextBoxState.Text, TextBoxZip.Text);
 
             // Instancia objeto da camada de negocio
-            aDALTitles = new DAL.DALTitle();
+            aDALAuthors = new DAL.DALAuthors();
 
             // Chama metodo de insert passando o objeto preenchido
-            aDALTitles.Insert(aTitles);
+            aDALAuthors.Insert(aAuthors);
 
             // Chama Página de Titulos
-            Response.Redirect("~\\WebFormTitle.aspx");
+            Response.Redirect("~\\Web\\WebFormAuthors.aspx");
 
         }
     }

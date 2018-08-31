@@ -45,8 +45,8 @@ namespace WebAppCRUDPUBS.DAL
                     aPub_info = new Modelo.Pub_info(
                         dr["pub_id"].ToString(),
                         (byte[])dr["logo"],
-                        dr["pr_info"].ToString()
-                        );
+                        dr["pr_info"].ToString(),
+                        dr["arquivo"].ToString());
                     // Adiciona o livro lido à lista
                     aListPub_info.Add(aPub_info);
                 }
@@ -84,11 +84,11 @@ namespace WebAppCRUDPUBS.DAL
             // Cria comando SQL
             SqlCommand com = conn.CreateCommand();
             // Define comando de exclusão
-            SqlCommand cmd = new SqlCommand("INSERT INTO Pub_info (pub_id, logo, pr_info) VALUES(@pub_id, @logo, @pr_info)", conn);
-            cmd.Parameters.AddWithValue("@pub_id", obj.pub_id);
-            cmd.Parameters.AddWithValue("@logo", obj.logo);
-            cmd.Parameters.AddWithValue("@pr_info", obj.pr_info);
-
+            SqlCommand cmd = new SqlCommand("INSERT INTO Pub_info (pub_id, logo, pr_info, arquivo) VALUES(@pub_id, @logo, @pr_info, @arquivo)", conn);
+                cmd.Parameters.AddWithValue("@pub_id", obj.pub_id);
+                cmd.Parameters.AddWithValue("@logo", obj.logo);
+                cmd.Parameters.AddWithValue("@pr_info", obj.pr_info);
+                cmd.Parameters.AddWithValue("@arquivo", obj.arquivo);
             // Executa Comando
             cmd.ExecuteNonQuery();
         }
@@ -102,11 +102,11 @@ namespace WebAppCRUDPUBS.DAL
             // Cria comando SQL
             SqlCommand com = conn.CreateCommand();
             // Define comando de exclusão
-            SqlCommand cmd = new SqlCommand("UPDATE Pub_info SET logo = @logo, pr_info = @pr_info WHERE pub_id = @pub_id", conn);
-            cmd.Parameters.AddWithValue("@pub_id", obj.pub_id);
-            cmd.Parameters.AddWithValue("@logo", obj.logo);
-            cmd.Parameters.AddWithValue("@pr_info", obj.pr_info);
-
+            SqlCommand cmd = new SqlCommand("UPDATE Pub_info SET logo = @logo, pr_info = @pr_info, arquivo = @arquivo WHERE pub_id = @pub_id", conn);
+                cmd.Parameters.AddWithValue("@pub_id", obj.pub_id);
+                cmd.Parameters.AddWithValue("@logo", obj.logo);
+                cmd.Parameters.AddWithValue("@pr_info", obj.pr_info);
+                cmd.Parameters.AddWithValue("@arquivo", obj.arquivo);
             // Executa Comando
             cmd.ExecuteNonQuery();
         }
